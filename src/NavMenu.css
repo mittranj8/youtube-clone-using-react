@@ -1,0 +1,46 @@
+.navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  /* To make the navbar sticky */
+  position: sticky;
+  top: 0;
+  /* Nothing goes underneath the navbar */
+  z-index: 100;
+  background-color: white;
+}
+
+.navMenu_logo {
+  height: 25px;
+  object-fit: contain;
+  margin-left: 20px;
+}
+
+.navMenu_center {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  border: 1px solid black;
+}
+
+.navMenu_center > input {
+  flex: 1;
+  border: none;
+}
+
+.navMenu_searchButton {
+  width: 50px !important;
+  background-color: #fafafa;
+  border-left: 1px solid lightgray;
+  color: gray;
+}
+
+.navMenu_right {
+  display: flex;
+  align-items: center;
+}
+
+.navMenu_icons {
+  margin-right: 8px;
+}
