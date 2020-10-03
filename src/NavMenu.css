@@ -27,6 +27,9 @@
 .navMenu_center > input {
   flex: 1;
   border: none;
+  border-width: 0;
+  box-shadow: none;
+  outline: none;
 }
 
 .navMenu_searchButton {
@@ -42,5 +45,6 @@
 }
 
 .navMenu_icons {
-  margin-right: 8px;
+  margin-right: 20px;
+  font-size: x-large !important;
 }
