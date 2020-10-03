@@ -23,7 +23,7 @@ function Videos({
           <h4>{title}</h4>
           <p>{channelName}</p>
           <p>
-            {views} . {timestamp}
+            {views} • {timestamp}
           </p>
         </div>
       </div>
