@@ -6,24 +6,36 @@ import {
   Search,
   VideoCall,
 } from "@material-ui/icons";
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./NavMenu.css";
 
 function NavMenu() {
+  const [inputSearch, setInputSearch] = useState("");
+
   return (
     <div className="navMenu">
       <div className="navMenu_left">
         <Menu />
-        <img
-          className="navMenu_logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/1004px-Logo_of_YouTube_%282015-2017%29.svg.png"
-          alt="youtube_logo"
-        />
+        <Link to="/">
+          <img
+            className="navMenu_logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/1004px-Logo_of_YouTube_%282015-2017%29.svg.png"
+            alt="youtube_logo"
+          />
+        </Link>
       </div>
 
       <div className="navMenu_center">
-        <input placeholder="Search" type="text" />
-        <Search className="navMenu_searchButton" />
+        <input
+          value={inputSearch}
+          onChange={(e) => setInputSearch(e.target.value)}
+          placeholder="Search"
+          type="text"
+        />
+        <Link to={`/search/${inputSearch}`}>
+          <Search className="navMenu_searchButton" />
+        </Link>
       </div>
 
       <div className="navMenu_right">
