@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import NavMenu from "./NavMenu";
 import RecVideos from "./RecVideos";
+import SearchPage from "./SearchPage";
 import SideBar from "./SideBar";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path="/search/:searchTerm">
             <div className="app_page">
               <SideBar />
+              <SearchPage />
             </div>
           </Route>
           <Route path="/">

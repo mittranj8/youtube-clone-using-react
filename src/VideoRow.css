@@ -1,0 +1,47 @@
+.videoRow {
+  display: flex;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+.videoRow > img {
+  object-fit: contain;
+  width: 246px;
+  height: 138px;
+}
+
+.videoRow_text {
+  margin-left: 14px;
+}
+
+.videoRow_info {
+  display: flex;
+  margin-top: 10px;
+  padding-right: 30px;
+  align-items: center;
+}
+
+.videoRow_avatar {
+  height: 30px !important;
+  width: 30px !important;
+}
+
+.videoRow_name {
+  margin-left: 15px;
+}
+
+.videoRow_name > p {
+  font-size: 14px;
+  color: gray;
+}
+
+.videoRow_description {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #606060;
+}
+
+.videoRow_headline {
+  font-size: 14px;
+  color: #606060;
+}
