@@ -16,8 +16,6 @@ import {
 export default function SideBar() {
   return (
     <div className="sideBar">
-      <h1>This is SideBar</h1>
-
       <SideBarRow selected Icon={Home} title="Home" />
       <SideBarRow Icon={Whatshot} title="Trending" />
       <SideBarRow Icon={Subscriptions} title="Subscription" />
